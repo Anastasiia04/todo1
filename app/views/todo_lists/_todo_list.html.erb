@@ -1,0 +1,9 @@
+<%= div_for todo_list do %>
+
+  <h3><%= todo_list.name %></h3>
+
+  <ul>
+   <li><%= link_to "Edit List", new_todo_list_path, remote: true %></li>
+   <li><%= link_to "Delete List", list, remote: true, method: :delete %></li>
+  </ul>
+<% end %>
